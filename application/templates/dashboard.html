@@ -1,0 +1,45 @@
+{% extends "base.html" %}
+{% block title %}Dashboard{% endblock %}
+
+{% block content %}
+<div class="max-w-5xl mx-auto p-6">
+
+    <!-- Welcome Message -->
+    <div class="text-center mb-10">
+        <h1 class="text-4xl font-extrabold text-indigo-600 mb-2">Welcome, {{ name }}! 👋</h1>
+        <p class="text-gray-600 text-lg">Here’s an overview of your activity and some quick actions.</p>
+    </div>
+
+    <!-- Dashboard Cards -->
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mb-10">
+        <div class="bg-white shadow-md rounded-2xl p-6 hover:shadow-xl transition">
+            <h2 class="text-2xl font-bold text-indigo-500 mb-2 text-center">Calculations</h2>
+            <p class="text-gray-600 text-center">Track your recent calculations easily.</p>
+        </div>
+        
+        <div class="bg-white shadow-md rounded-2xl p-6 hover:shadow-xl transition">
+            <h2 class="text-2xl font-bold text-indigo-500 mb-2 text-center">Settings</h2>
+            <p class="text-gray-600 text-center">Customize your calculator experience.</p>
+        </div>
+        
+        <div class="bg-white shadow-md rounded-2xl p-6 hover:shadow-xl transition">
+            <h2 class="text-2xl font-bold text-indigo-500 mb-2 text-center">Help</h2>
+            <p class="text-gray-600 text-center">Need assistance? Find answers quickly.</p>
+        </div>
+    </div>
+
+    <!-- Quick Actions -->
+    <div class="bg-white shadow-lg rounded-2xl p-8">
+        <h2 class="text-3xl font-bold text-indigo-600 mb-6">Quick Actions</h2>
+        <div class="flex flex-col md:flex-row md:space-x-6 space-y-4 md:space-y-0">
+            <a href="/" class="w-full text-center bg-indigo-500 text-white py-3 rounded-lg font-semibold hover:bg-indigo-600 transition">
+                ➡️ Go to Calculator
+            </a>
+            <a href="/about" class="w-full text-center bg-gray-100 text-indigo-600 py-3 rounded-lg font-semibold hover:bg-gray-200 transition">
+                ℹ️ About the App
+            </a>
+        </div>
+    </div>
+
+</div>
+{% endblock %}

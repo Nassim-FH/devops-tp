@@ -1,0 +1,31 @@
+{% extends "base.html" %}
+{% block title %}Contact Us{% endblock %}
+
+{% block content %}
+<div class="max-w-3xl mx-auto bg-white dark:bg-gray-800 p-8 rounded-lg shadow-lg">
+    <h1 class="text-3xl font-bold mb-6 text-center">Contact Us 📬</h1>
+
+    <form method="POST" action="{{ url_for('main.contact') }}" class="space-y-6">
+        <div>
+            <label class="block mb-2 text-sm font-semibold">Name</label>
+            <input type="text" name="name" required class="w-full p-3 rounded-lg bg-gray-100 dark:bg-gray-700 text-gray-800 dark:text-gray-100 focus:outline-none focus:ring-2 focus:ring-indigo-500">
+        </div>
+
+        <div>
+            <label class="block mb-2 text-sm font-semibold">Email</label>
+            <input type="email" name="email" required class="w-full p-3 rounded-lg bg-gray-100 dark:bg-gray-700 text-gray-800 dark:text-gray-100 focus:outline-none focus:ring-2 focus:ring-indigo-500">
+        </div>
+
+        <div>
+            <label class="block mb-2 text-sm font-semibold">Message</label>
+            <textarea name="message" rows="5" required class="w-full p-3 rounded-lg bg-gray-100 dark:bg-gray-700 text-gray-800 dark:text-gray-100 focus:outline-none focus:ring-2 focus:ring-indigo-500"></textarea>
+        </div>
+
+        <div class="text-center">
+            <button type="submit" class="bg-indigo-500 hover:bg-indigo-600 text-white font-bold py-3 px-6 rounded-lg transition">
+                Send Message
+            </button>
+        </div>
+    </form>
+</div>
+{% endblock %}

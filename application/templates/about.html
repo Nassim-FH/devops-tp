@@ -1,0 +1,39 @@
+{% extends "base.html" %}
+
+{% block content %}
+<div class="max-w-4xl mx-auto p-6">
+    <h1 class="text-5xl font-extrabold text-center mb-8 text-indigo-600">About Our Project</h1>
+
+    <p class="text-xl text-gray-700 text-center">
+        Welcome to our <span class="font-semibold">Mini Project</span>! 🧮
+    </p>
+
+    <p class="mt-6 text-gray-600 text-center">
+        This is a simple yet powerful Calculator App, built to demonstrate how to create a clean, multi-page
+        Flask application with a modern and beautiful UI using <span class="font-bold text-indigo-500">TailwindCSS</span>.
+    </p>
+
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mt-10">
+        <div class="bg-white shadow-md rounded-2xl p-6 hover:shadow-xl transition">
+            <h2 class="text-2xl font-bold text-indigo-500 mb-4 text-center">Accurate</h2>
+            <p class="text-gray-600 text-center">Performs precise calculations for everyday use.</p>
+        </div>
+
+        <div class="bg-white shadow-md rounded-2xl p-6 hover:shadow-xl transition">
+            <h2 class="text-2xl font-bold text-indigo-500 mb-4 text-center">Simple</h2>
+            <p class="text-gray-600 text-center">Minimalistic design to make calculations fast and easy.</p>
+        </div>
+
+        <div class="bg-white shadow-md rounded-2xl p-6 hover:shadow-xl transition">
+            <h2 class="text-2xl font-bold text-indigo-500 mb-4 text-center">Modern</h2>
+            <p class="text-gray-600 text-center">Built with Flask and styled beautifully with TailwindCSS.</p>
+        </div>
+    </div>
+
+    <div class="mt-12 text-center">
+        <a href="/" class="inline-block bg-indigo-500 text-white px-6 py-3 rounded-full font-semibold hover:bg-indigo-600 transition">
+            Try the Calculator
+        </a>
+    </div>
+</div>
+{% endblock %}

@@ -1,0 +1,21 @@
+# Core Flask Requirements
+Flask==2.3.2
+Werkzeug==2.3.7
+Jinja2==3.1.2
+
+# Database & Authentication
+Flask-SQLAlchemy==3.0.3
+Flask-Login==0.6.2
+python-dotenv==1.0.0
+
+# Security
+Flask-WTF==1.1.1
+WTForms==3.0.1
+email-validator==2.0.0.post2
+
+# Password Hashing
+werkzeug==2.3.7  # Includes password hashing utilities
+
+# Optional (for production)
+gunicorn==20.1.0
+greenlet==2.0.2
